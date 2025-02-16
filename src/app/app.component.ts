@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ProgressiveImageComponent } from "./progressive-image/progressive-image.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [ProgressiveImageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
