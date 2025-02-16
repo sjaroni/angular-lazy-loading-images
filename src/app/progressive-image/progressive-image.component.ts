@@ -13,8 +13,6 @@ export class ProgressiveImageComponent {
   isLoaded: boolean = false;
 
   onImageLoad():void {
-    this.isLoaded = true;
-    console.log('image komplett geladen');
-    
+    this.isLoaded = true;    
   }
 }

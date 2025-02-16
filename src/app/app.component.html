@@ -1,34 +1,13 @@
 <h1>Lazy loading Images in Angular, without libraries</h1>
 
 <div class="image-container">
+
+@for (image of images; track $index) {  
   <div class="image-item">
     <app-progressive-image
-      imageUrl="/img/image-1.jpeg"
-      imageUrlSmall="/img/image-1-small.jpeg"
+      imageUrl="/img/image-{{$index}}.jpeg"
+      imageUrlSmall="/img/image-{{$index}}-small.jpeg"
     ></app-progressive-image>
   </div>
-  <div class="image-item">
-    <app-progressive-image
-      imageUrl="/img/image-2.jpeg"
-      imageUrlSmall="/img/image-2-small.jpeg"
-    ></app-progressive-image>
-  </div>
-  <div class="image-item">
-    <app-progressive-image
-      imageUrl="/img/image-3.jpeg"
-      imageUrlSmall="/img/image-3-small.jpeg"
-    ></app-progressive-image>
-  </div>
-  <div class="image-item">
-    <app-progressive-image
-      imageUrl="/img/image-4.jpeg"
-      imageUrlSmall="/img/image-4-small.jpeg"
-    ></app-progressive-image>
-  </div>
-  <div class="image-item">
-    <app-progressive-image
-      imageUrl="/img/image-5.jpeg"
-      imageUrlSmall="/img/image-5-small.jpeg"
-    ></app-progressive-image>
-  </div>
+}
 </div>
